@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.wrapper, .container, .card, .plan, .buttons {
+    display: flex;
+}
+
+.wrapper, .container, .card, .buttons {
+    flex-direction: column;
+}
+
+.wrapper {
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    border-radius: 1em;
+    text-align: center;
+    background-color: white;
+}
+
+.card {
+    font-size: 16px;
+    align-items: center;
+}
+
+.card-body {
+    width: 85%;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+
+.card-title {
+    color: var(--Dark-blue)
+}
+
+.img img {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.icon img {
+    width: 40px;
+}
+
+.plan {
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.payment small {
+    color: var(--Desaturated-blue);
+}
+
+.payment h5 {
+    color: var(--Dark-blue);
+}
+
+.payment {
+    margin-right: 1em;
+}
+
+.link a {
+    color: var(--Bright-blue);
+}
+
+/*Margins*/
+.card-title {
+    margin-top: 2em;
+}
+
+.card-body, .plan {
+    margin-top: 1em;
+}
+
+.buttons {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 75%;
+}
+
+.confirm, .cancel {
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: 900;
+}
+
+.confirm {
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    margin-bottom: 0.5em;
+    box-shadow: rgba(0,0,0,0.15) 5px 15px 15px 0px;
+}
+.cancel {
+    border: none;
+    background: transparent;
+    color: var(--Desaturated-blue);
+}
+
+.confirm:hover, .cancel:hover, .link a:hover {
+    cursor:pointer;
+}
+
+.confirm:hover {
+    background-color: hsl(245, 50%, 52%);;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+  .wrapper {
+    margin-top: 1em;
+  }
+  body {
+    background-color: var(--Pale-blue);
+  }  
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        margin-top: 5em;
+    }
+    body {
+        background-color: var(--Pale-blue);
+    }
+    .container {
+        width: 20%;
+        height: 65vh;
+    }
+    .card-body {
+        width: 70%;
+    }
+} 
