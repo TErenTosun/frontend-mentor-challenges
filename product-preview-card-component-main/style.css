@@ -1,0 +1,138 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.card-body, .price-tag del, .muted-title{
+    color: var(--dark-gray);
+}
+
+.card-body, .card-title h1 {
+    margin: 0.5em 0.25em;
+}
+
+.card-title h1, .price-tag b {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.card {
+    padding: 1em;
+}
+
+.card-body {
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+
+.container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 1em;
+}
+
+.price-tag {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 1em;
+}
+
+.price-tag del {
+    margin-top: 0.75em;
+    margin-left: 1em;
+}
+
+.price-tag b {
+    color: var(--dark-cyan);    
+    font-size: 2em;
+}
+
+.muted-title {
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 0.5em;
+    height: 3.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+}
+
+.btn p {
+    margin-left: 0.5em;
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
+
+
+
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    .container {
+        flex-direction: column;
+    }
+    .wrapper {
+        margin: 1em;
+    }
+    #mainimg {
+        border-radius: 1em 1em 0 0;
+        width: 343px;
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+        width: 35vw;
+    }
+    .wrapper {
+        margin: 10em 32.5%;
+    }
+    #mainimg {
+        border-radius: 1em 0 0 1em;
+        width: 20vw;
+        height: 420px;
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 2em;
+    }
+    .price-tag {
+        margin-top: 4em;
+    }
+}

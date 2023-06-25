@@ -1,0 +1,109 @@
+* {
+    font-family: Outfit;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.price p {
+    color: hsl(178, 100%, 50%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    border: none;
+    margin: 0;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1em;
+    border: none;
+}
+
+.card, .card-title, .card-body, .card-footer, hr, .values, .img {
+    margin: 1em;
+}
+
+.card-footer a, .card-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-footer a:hover, .card-title a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-footer p  {
+    margin-top: 0.25em;
+    margin-left: 0.75em;
+}
+
+.card-footer img {
+    width: 30px;
+}
+
+.values, .price, .time-left, .card-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.values {
+    justify-content: space-between;
+}
+
+.card-title {
+    color: white;
+    font-weight: 700;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+.card-footer img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.price p, .time-left p{
+    margin-left: 0.5em;
+}
+
+.img img {
+    border-radius: 1em;
+    border-style: none;
+    display: block;
+}
+
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    .img img {
+        width: 311px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .img img {
+        width: 450px;
+    }
+    .wrapper {
+        margin-top: 5em;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+}
